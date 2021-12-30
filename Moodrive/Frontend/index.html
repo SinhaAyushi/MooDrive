@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link async rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script async defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+        <script async defer type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        
+    </head>
+    <body>
+
+       <div class="modal"></div>
+
+        <div class="header">
+
+            <div class="header_content">
+                <div class="header-title">Go Anywhere Do  <br>anything.</div>
+                <div class="header-para">
+                    <p>
+                        <b style="color:rgb(0, 110, 255);font-size: 36px;"><br> MooDrive</b> is the best place to plan your next journey!...
+                    </p>
+                </div>
+
+                <div class="bt-area">
+                    <button onclick="func()">Log In / Sign Up</button>
+                    <!-- <button>Sign Up</button> -->
+                </div>
+                <!-- <div class="header-input">
+                    <input class="header-input-text" type="text" value="email">
+                    <button class="headerinputbtnn">Register</button>
+                </div> -->
+            </div>
+            <img class="header-img" id="front-img" src="assets/map.png" alt="">
+
+        </div>
+       
+    </body>
+    <script>
+        function func(){
+            $(".modal").load('./component/login.html',function(){
+                document.getElementsByClassName("modal")[0].style.display = "flex";
+            })
+        }
+
+        function m_close(){
+            document.getElementsByClassName("modal")[0].style.display = "none";
+            $(".modal").empty()
+        }
+    </script>
+</html>

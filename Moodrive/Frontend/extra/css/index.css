@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav{
+    height: 8%;
+}
+.content{
+    height: 90%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#map{
+    height: 90%;
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#postBtn,#postBtn2{
+    position: absolute;
+    right: 90px;
+}
+#postBtn2{
+    right: 10px;
+}
+/* .feeds{
+    height: 90%;
+    width: 30%;
+    overflow-y: auto;
+    position: absolute;
+    right: 0px;
+} */
+
+.feeds{
+    height: 90%;
+    width: 30%;
+    overflow-y: auto;
+    position: absolute;
+    right: 0px;
+}
+#popupcard{
+    position: absolute;
+    top: -5px;
+    height: 300px;
+    width: 250px;
+}
